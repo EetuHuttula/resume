@@ -9,7 +9,7 @@ export default function Maintenance() {
 
       <div className="row">
         <div className="col-md-8">
-          <img className="img-fluid rounded shadow-xm service-img" src="/images/maintenance-bg.jpg" alt="Ylläpito SoftaKoppi"/>
+          <img className="img-fluid rounded shadow-xm service-img" src="/maintenance-bg.jpg" alt="Ylläpito SoftaKoppi"/>
         </div>
 
         <div className="col-md-4">
@@ -22,7 +22,7 @@ export default function Maintenance() {
             <li>Turvallisuusseuranta - Seuraamme sivustosi turvallisuutta jatkuvasti ja suojaamme sen mahdollisilta uhilta.</li>
           </ul>
           <div className="p-1">
-          <Link href="/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
+          <Link href="/pages/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
           </div>
         </div>
       </div>

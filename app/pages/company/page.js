@@ -4,7 +4,7 @@ export default function Company() {
       <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
           <div class="col-12 col-lg-6 col-xl-5">
-            <img class="img-fluid rounded shadow-xm" loading="lazy" src="./EetuHuttula.jpg" alt="Eetu Huttula SoftaKoppi" />
+            <img class="img-fluid rounded shadow-xm" loading="lazy" src="../EetuHuttula.jpg" alt="Eetu Huttula SoftaKoppi" />
           </div>
           <div class="col-12 col-lg-6 col-xl-7">
             <div class="row justify-content-xl-center">

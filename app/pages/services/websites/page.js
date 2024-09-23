@@ -7,7 +7,7 @@ export default function Websites() {
 
       <div className="row">
         <div className="col-md-8">
-          <img className="img-fluid rounded shadow-xm  service-img" src="/images/websites-bg.webp" alt="Verkkosivut SoftaKoppi"/>
+          <img className="img-fluid rounded shadow-xm  service-img" src="/websites-bg.webp" alt="Verkkosivut SoftaKoppi"/>
         </div>
 
         <div className="col-md-4">
@@ -20,7 +20,7 @@ export default function Websites() {
             <li>Integroitu analytiikka - Seuraa kävijöiden käyttäytymistä ja sivuston suorituskykyä reaaliaikaisella analytiikalla.</li>
           </ul>
           <div className="p-1">
-          <Link href="/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
+          <Link href="/pages/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
           </div>
         </div>
       </div>

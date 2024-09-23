@@ -5,11 +5,23 @@ import './references.css';
 // Image data
 const images = [
     {
-        src: '/BaskeriProductions.PNG',
-        alt: 'Baskeri Productions',
+        src: '/baskeri.png',
+        alt: 'Baskeri Productions SoftaKoppi',
         name: 'Baskeri Productions',
         url: 'https://baskeriproductions.fi'
       }, 
+      {
+        src: '/paintemreference.png',
+        alt: 'Paintem SoftaKoppi',
+        name: 'Paintem',
+        url: 'https://paintem.fi/'
+      }, 
+      {
+        src: '/petenpisnes.png',
+        alt: 'petenpisnes SoftaKoppi',
+        name: 'Peten Pisnes',
+        url: 'https://petenpisnes.fi/'
+      },
   // Add more image objects as needed
 ];
 

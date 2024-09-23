@@ -13,7 +13,7 @@ export default function MyNavbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow-lg">
       <div className="container-fluid">
-        <Link href="/"><img src="/images/LogoValkoinen1.png"  className="brand-logo" width={250}/></Link>
+        <Link href="/"><img src="/Logovalkoinen.PNG" alt="SoftaKoppi Logo"  className="brand-logo"/></Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -29,24 +29,24 @@ export default function MyNavbar() {
           
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
             <li className="nav-item">
-              <Link href="/services" passHref className="nav-link">
+              <Link href="/pages/services" passHref className="nav-link">
                 Palvelut
               </Link>
             </li>
           
         
             <li className="nav-item">
-              <Link href="/company" passHref className="nav-link">
+              <Link href="/pages/company" passHref className="nav-link">
                 Yrityksestä
               </Link>
             </li>
             <li className="nav-item">
-              <Link href="/references" passHref className="nav-link">
+              <Link href="/pages/references" passHref className="nav-link">
                 Referenssit
               </Link>
             </li> 
              <li className="nav-item">
-              <Link href="/contact" passHref className="nav-link">
+              <Link href="/pages/contact" passHref className="nav-link">
                 Yhteystiedot
               </Link>
             </li>

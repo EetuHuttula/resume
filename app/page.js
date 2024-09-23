@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="Home">
       
-      <motion.img src="/images/Logovalkoinen1.png" className="text"
+      <motion.img src="/Logovalkoinen.PNG" className="text"
        alt="softakoppilogo"
        initial={{ opacity: 0, y: 50 }}
        animate={{ opacity: 1, y: 0 }}
@@ -17,7 +17,7 @@ export default function Home() {
        animate={{ opacity: 1, y: 0 }}
        transition={{ duration: 0.9 }}
         className="button-container text-center">
-        <Link href="/services" className="btn btn-home pulse" >Tutustu Palveluihin</Link>
+        <Link href="/pages/services" className="btn btn-home pulse" >Tutustu Palveluihin</Link>
       </motion.div>
       <video
         src="/websitebg.mp4"

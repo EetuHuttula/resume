@@ -8,7 +8,7 @@ export default function WebApplications() {
 
       <div className="row">
         <div className="col-md-8">
-          <img className="img-fluid rounded shadow-xm  service-img" src="/images/webapps-bg.jpg" alt="Verkkoapplikaatiot SoftaKoppi"/>
+          <img className="img-fluid rounded shadow-xm  service-img" src="/webapps-bg.jpg" alt="Verkkoapplikaatiot SoftaKoppi"/>
         </div>
 
         <div className="col-md-4">
@@ -21,7 +21,7 @@ export default function WebApplications() {
             <li>API-integraatiot - Integroimme sovellukset saumattomasti muihin järjestelmiin ja palveluihin.</li>
           </ul>
           <div className="p-1">
-          <Link href="/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
+          <Link href="/pages/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
           </div>
         </div>
       </div>

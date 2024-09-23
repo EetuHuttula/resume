@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Head from 'next/head';
 import './ContactUs.css';
 
 export default function ContactForm() {
@@ -44,7 +45,6 @@ export default function ContactForm() {
       <div className="container">
         <div className="section-title text-center">
           <h1>Ota yhteyttä</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui venenatis dignissim. Aenean vitae metus in augue pretium ultrices.</p>
         </div>
         <div className="row">
           <div className="col-lg-7">
@@ -118,4 +118,4 @@ export default function ContactForm() {
       </div>
     </div>
   );
-};
+}

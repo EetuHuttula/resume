@@ -7,7 +7,7 @@ export default function SEO() {
 
       <div className="row">
         <div className="col-md-8">
-          <img className="img-fluid rounded shadow-xm  service-img" src="/images/Seo-bg.jpg" alt="SEO SoftaKoppi"/>
+          <img className="img-fluid rounded shadow-xm  service-img" src="/Seo-bg.jpg" alt="SEO SoftaKoppi"/>
         </div>
 
         <div className="col-md-4">
@@ -21,7 +21,7 @@ export default function SEO() {
             <li>Laadukas ja relevantti sisältö - Tuotamme sisältöä, joka on informatiivista, hyvin kirjoitettua ja vastaa käyttäjien kysymyksiin sekä tarpeisiin, mikä parantaa käyttäjäkokemusta ja hakukonesijoituksia.</li>
           </ul>
           <div className="p-1">
-          <Link href="/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
+          <Link href="/pages/contact" className="btn btn-primary shadow-xm">Ota yhteyttä</Link>
           </div>
         </div>
       </div>

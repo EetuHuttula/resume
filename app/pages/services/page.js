@@ -27,7 +27,7 @@ export default function Services() {
                       </svg>
                       <h4 className="mb-4">Verkkoaplikaatiot</h4>
                       <p className="mb-4 text-secondary text-box">Rakennamme räätälöityjä verkkoaplikaatioita, jotka vastaavat liiketoimintasi tarpeita.</p>
-                      <Link href="/services/webapplications" className="fw-bold text-decoration-none link-primary">
+                      <Link href="./services/webapplications" className="fw-bold text-decoration-none link-primary">
                         Lue lisää
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                           <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -45,7 +45,7 @@ export default function Services() {
                       </svg>
                       <h4 className="mb-4">Verkkosivut</h4>
                       <p className="mb-4 text-secondary text-box">Luomme upean ja toimivan verkkosivuston, joka heijastaa brändisi identiteettiä ja parantaa asiakaskokemusta.</p>
-                      <Link href="/services/websites" className="fw-bold text-decoration-none link-primary">
+                      <Link href="./services/websites" className="fw-bold text-decoration-none link-primary">
                         Lue lisää
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                           <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -62,7 +62,7 @@ export default function Services() {
                       </svg>
                       <h4 className="mb-4">Ylläpito</h4>
                       <p className="mb-4 text-secondary text-box">Tarjoamme luotettavaa ja kattavaa ylläpitopalvelua varmistaaksemme verkkosivujen ja verkkokauppojen jatkuvan toimivuuden ja turvallisuuden.</p>
-                      <Link href="/services/maintenance" className="fw-bold text-decoration-none link-primary">
+                      <Link href="./services/maintenance" className="fw-bold text-decoration-none link-primary">
                         Lue lisää
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                           <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
@@ -80,7 +80,7 @@ export default function Services() {
                       </svg>
                       <h4 className="mb-4">Hakukoneoptimointi</h4>
                       <p className="mb-4 text-secondary text-box">Tarjoamme myös hakukoneoptimointia (SEO), joka parantaa verkkosivustosi näkyvyyttä ja houkuttelee lisää asiakkaita.</p>
-                      <Link href="/services/seo" className="fw-bold text-decoration-none link-primary">
+                      <Link href="./services/seo" className="fw-bold text-decoration-none link-primary">
                         Lue lisää
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
                           <path fillRule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
