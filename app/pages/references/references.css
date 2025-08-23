@@ -1,4 +1,9 @@
 /* Container styling */
+body{
+   background: linear-gradient(-55deg, transparent 35%, rgba(0, 0, 0, 0.055) 25%, rgba(0, 0, 0, 0.055) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.055) 75%, rgba(0, 0, 0, 0.055));
+    background-size: 5px 5px;
+    background-color: #f2f2f2;
+}
 .container {
     padding: 20px;
     max-width: 1600px;
@@ -34,7 +39,6 @@
   .image-box:hover .image-name {
     opacity: 1;
   }
-  
   /* Overlay text styling */
   .image-name {
     position: absolute;
@@ -42,7 +46,6 @@
     left: 0;
     width: 100%;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
     opacity: 0;

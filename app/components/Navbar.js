@@ -1,6 +1,7 @@
 "use client";
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { motion } from 'framer-motion';
 import './navbar.css';
 
 export default function MyNavbar() {
@@ -11,9 +12,16 @@ export default function MyNavbar() {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark shadow-lg">
-      <div className="container-fluid">
-        <Link href="/"><img src="/Logovalkoinen.PNG" alt="SoftaKoppi Logo"  className="brand-logo"/></Link>
+    <motion.nav
+      className="container-fluid navbar navbar-expand-lg bg-dark navbar-dark shadow-lg"
+      initial={{ y: 0, opacity: 1 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+    >
+      <div className="container">
+        <Link href="/" className="nav-link text-white px-1 p-2 m-2">
+          Eetu Huttula
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -26,33 +34,30 @@ export default function MyNavbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">  
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href="/pages/services" passHref className="nav-link">
-                Palvelut
+              <Link href="/" passHref className="nav-link">
+                Home
               </Link>
             </li>
-          
-        
             <li className="nav-item">
-              <Link href="/pages/company" passHref className="nav-link">
-                Yrityksestä
+              <Link href="/pages/about" passHref className="nav-link">
+                About
               </Link>
             </li>
             <li className="nav-item">
               <Link href="/pages/references" passHref className="nav-link">
-                Referenssit
+                Projects
               </Link>
-            </li> 
-             <li className="nav-item">
+            </li>
+            <li className="nav-item">
               <Link href="/pages/contact" passHref className="nav-link">
-                Yhteystiedot
+                Contact
               </Link>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 }

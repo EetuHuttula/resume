@@ -3,12 +3,12 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  background-color: black !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Ensure that nothing spills out of the container */
 }
-
 .text {
   position: relative;
   z-index: 2;
@@ -22,31 +22,14 @@
 }
 
 .button-container {
-  margin-top: 20px; /* Space between the image and buttons */
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center the buttons horizontally */
-  z-index: 2; /* Ensure buttons are on top of the video */
+  flex-direction: row;       /* side by side */
+  justify-content: center;   /* center horizontally */
+  gap: 20px;                 /* space between buttons */
+  z-index: 2;
 }
 
-.btn {
-  background-color: #007bff4b; /* Button background color */
-  border-color: #007bff;
-  color: white; /* Text color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  margin: 5px; /* Space between buttons */
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 26px; /* Font size */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
-}
 
 .video-background {
   position: absolute;
@@ -70,22 +53,22 @@
 .btn-home {
   position: relative;
   display: inline-block;
-  padding: 16px 34px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  background-color: #00356d; /* Primary color */
-  border-radius: 50px; /* Rounded corners */
-  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.75); /* Shiny shadow effect */
+  background-color: #f1f1f10c;
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 0 0.1px rgba(173, 10, 51, 0.75); /* Shiny shadow effect */
   transition: all 0.3s ease;
   overflow: hidden;
 }
 
 .btn-home:hover {
   color: white;
-  box-shadow: 0 6px 25px rgba(0, 123, 255, 0.85); /* Enhanced shadow on hover */
+  box-shadow: 0 1px 5px rgba(173, 10, 51, 0.418);; /* Enhanced shadow on hover */
 }
 
 .btn-home::before {
@@ -112,6 +95,7 @@
   animation: pulse 10s infinite;
 }
 
+
 @keyframes pulse {
   0%, 100% {
     box-shadow: 0 0 20px rgba(0, 123, 255, 0.75);
@@ -119,4 +103,55 @@
   50% {
     box-shadow: 0 0 40px rgba(0, 123, 255, 0.85);
   }
+}
+
+.custom-cursor.hovered {
+  transform: scale(2);
+  background-color: #fff;
+}
+
+.question-mark-tooltip {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: help;
+}
+
+.question-mark {
+  background-color: rgba(13, 110, 253, 0.9);
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 45px;
+  right: 0;
+  font-size: 0.85rem;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.question-mark-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

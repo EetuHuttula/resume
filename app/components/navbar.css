@@ -2,13 +2,23 @@
     font-size: 1.2rem !important;
     color: #f4f4f4;
     padding: 5px;
+    transition: color 0.3s ease;
 
 }
-span {
-    text-decoration: none;
+
+.navbar .container {
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
 }
 
-.brand-logo {
-    width: 250px;
-    height: 100%;
+.navbar-nav {
+  display: flex;
+  gap: 1.5rem; /* space between links */
+}
+
+
+
+.nav-link:hover {
+  color: #f0a500 !important; /* accent color on hover */
 }

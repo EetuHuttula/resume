@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import './references.css';
+import { motion } from "framer-motion";
 
 // Image data
 const images = [
@@ -22,7 +23,23 @@ const images = [
         name: 'Peten Pisnes',
         url: 'https://petenpisnes.fi/'
       },
-  // Add more image objects as needed
+    {
+      src:'/porinanurkka.PNG',
+      alt:'Porinanurkka oma projekti',
+      name:'Porinanurkka'
+    },
+    {
+      src:'/sluuppishopetusivu.png',
+      alt:'SluuppiShop',
+      name:'Sluuppishop'
+    }
+    ,
+    {
+      src:'/chesscom.png',
+      alt:'Chess api projekti',
+      name:'Chess.com player search',
+      url:'https://chess-yt2t.onrender.com/'
+    }
 ];
 
 export default function References() {
@@ -31,7 +48,11 @@ export default function References() {
   };
 
   return (
-    <div className="container reference-page">
+    <div id="references_box" className="container-fluid pt-5">
+    <motion.div className="container reference-page"
+      initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9, ease: "easeOut" }}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -42,6 +63,7 @@ export default function References() {
           <div className="image-name">{image.name}</div>
         </div>
       ))}
+    </motion.div>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export const metadata = {
-  title: 'SoftaKoppi',
+  title: 'EetuHuttula',
   description: 'Softakopin tarjoamat palvelut: Verkkosivut, Verkkoapplikaatiot, Ylläpito. Tutustu ja ota yhteyttä!',
 };
 
