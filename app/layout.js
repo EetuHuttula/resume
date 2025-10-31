@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Softakopin tarjoamat palvelut: Verkkosivut, Verkkoapplikaatiot, Ylläpito. Tutustu ja ota yhteyttä!',
 };
 
-{/* Root layout component */}
+{/* Root layout compfonent */}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
