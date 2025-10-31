@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export'
+  output: 'export',
+  basePath: '/EetuHcv',
+  assetPrefix: '/EetuHcv/',
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

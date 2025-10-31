@@ -1,205 +1,478 @@
-"use client"
-import "./about.css"
-import { motion } from "framer-motion";
+"use client";
+import "./about.css";
+
 export default function About() {
   return (
-    <motion.section className=""
-    initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}>
+    <section id="about" className="about-container py-5">
       <div className="container">
-        <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-          <div className="col-12 col-lg-6 col-xl-5">
-            <img
-              className="img-fluid rounded shadow"
-              loading="lazy"
-              src="../EetuHuttula.jpg"
-              alt="Eetu Huttula"
-            />
-          </div>
-          <div className="col-12 col-lg-6 col-xl-7">
-            <div className="row justify-content-xl-center">
-              <div className="col-12 col-xl-11">
-                <h2 className="mb-3 red-underline">Hi, I’m Eetu</h2>
-                <p className="lead fs-4 text-secondary mb-3">
-                  I am a passionate Full Stack developer focused on crafting
-                  exceptional solutions.
+        <div className="content-wrapper bg-white p-4 p-md-5 rounded-3 shadow-lg">
+          {/* Personal Info Section */}
+          <div className="row align-items-center mb-5">
+            <div className="col-12 col-lg-4 mb-4 mb-lg-0">
+              <div className="image-wrapper">
+                <img
+                  className="img-fluid rounded-3 shadow-lg"
+                  loading="lazy"
+                  src="../EetuHuttula.jpg"
+                  alt="Eetu Huttula"
+                />
+              </div>
+            </div>
+            <div className="col-12 col-lg-8">
+              <div className="ps-lg-4">
+                <h2 className="mb-3 display-5 fw-bold">Hi, I'm Eetu</h2>
+                <p className="lead fs-4 text-secondary mb-4">
+                  I am a 26-year-old Computer Science student, entrepreneur, and
+                  Full Stack developer from Helsinki, passionate about creating
+                  modern, high-performance web applications.
                 </p>
-                
-                <div className="row gy-4 gy-md-0 gx-xxl-5">
+
+                <div className="row g-4 mb-4">
                   <div className="col-12 col-md-6">
-                    <div className="d-flex">
-                      <div className="me-4 text-danger">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          className="bi bi-gear-fill"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
-                        </svg>
+                    <div className="d-flex align-items-start">
+                      <div className="icon-box me-3 bg-primary bg-opacity-10 rounded-3 p-3">
+                        <i className="fa-solid fa-briefcase fs-4 text-primary"></i>
                       </div>
                       <div>
-                        <h2 className="h4 mb-3">Learning modern development</h2>
+                        <h3 className="h5 mb-2">Entrepreneur & Developer</h3>
                         <p className="text-secondary mb-0">
-                          I’m actively exploring modern development practices,
-                          focusing on building clean and user-friendly apps that
-                          meet today’s standards.
+                          Founded SoftaKoppi in 2024, delivering custom web
+                          solutions to clients including Paintem, Baskeri
+                          Production, and Peten Pisnes.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
-                    <div className="d-flex">
-                      <div className="me-4 text-danger">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="32"
-                          height="32"
-                          fill="currentColor"
-                          className="bi bi-fire"
-                          viewBox="0 0 16 16"
-                        >
-                          <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
-                        </svg>
+                    <div className="d-flex align-items-start">
+                      <div className="icon-box me-3 bg-primary bg-opacity-10 rounded-3 p-3">
+                        <i className="fa-solid fa-chess fs-4 text-primary"></i>
                       </div>
                       <div>
-                        <h2 className="h4 mb-3">Passion and growth</h2>
+                        <h3 className="h5 mb-2">Strategic Thinker</h3>
                         <p className="text-secondary mb-0">
-                          I approach every project with curiosity and
-                          dedication, eager to learn and improve while
-                          delivering the best results I can.
+                          Passionate chess player in my free time. I love
+                          problem-solving and strategic thinking, both on and
+                          off the board.
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <div className="mt-5">
-                 {/**  <p className="text-gray-600 mt-6">
-                    I studied web development at Oulu University of Applied
-                    Sciences and continued my academic journey at the University
-                    of Helsinki. These studies have given me a solid foundation
-                    in computer science and strong analytical thinking. I’m a
-                    self-driven professional who thrives in both independent and
-                    team-oriented environments—and I love solving challenging
-                    problems through smart, thoughtful code.
-                  </p> */} 
-                  <p className="mb-5">
-                  My attention to detail and collaborative approach help me
-                  build high-quality applications and work effectively within
-                  teams. I have experience across personal projects and larger
-                  group collaborations, covering frontend and backend. I’m
-                  always eager to learn new technologies and enhance my skills.
-                </p>
+          {/* Work Experience Section */}
+          <div className="row mb-5">
+            <div className="col-12">
+              <h2 className="h3 mb-4">Professional Experience</h2>
+              <div className="education-card p-4 rounded-3 border bg-light">
+                <div className="d-flex align-items-start justify-content-between mb-3">
+                  <div>
+                    <h3 className="h5 text-primary mb-1">
+                      Web Developer & CEO
+                    </h3>
+                    <p className="text-secondary mb-1 fw-semibold">
+                      SoftaKoppi
+                    </p>
+                    <p className="text-muted small">2024 - Present</p>
+                  </div>
+                  <i className="fa-solid fa-briefcase fs-3 text-primary opacity-25"></i>
+                </div>
+                <ul className="text-secondary mb-3">
+                  <li className="mb-2">
+                    Founded a web development company and delivered 3 client
+                    projects
+                  </li>
+                  <li className="mb-2">
+                    Rebuilt Paintem's website, significantly improving user
+                    experience
+                    <a
+                      href="https://paintem.fi/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ms-2 text-primary"
+                    >
+                      <i className="fa-solid fa-external-link-alt"></i>
+                    </a>
+                  </li>
+                  <li className="mb-2">
+                    Developed custom websites for Baskeriproduction and
+                    Petenpisnekset
+                  </li>
+                  <li>
+                    Managed full project lifecycle from client negotiations to
+                    deployment and maintenance
+                  </li>
+                </ul>
+                <div className="d-flex flex-wrap gap-2">
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    HTML5
+                  </span>
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    CSS3
+                  </span>
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    JavaScript
+                  </span>
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    React
+                  </span>
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    PHP
+                  </span>
+                  <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                    Responsive Design
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Education Section */}
+          <div className="row mb-5">
+            <div className="col-12">
+              <h2 className="h3 mb-4 mt-4">Education & Future Plans</h2>
+              <div className="row g-4">
+                <div className="col-12 col-md-6">
+                  <div className="education-card p-4 rounded-3 border bg-light">
+                    <h3 className="h5 text-primary">University of Helsinki</h3>
+                    <p className="text-secondary mb-1">
+                      Bachelor of Science in Computer Science
+                    </p>
+                    <p className="text-muted mb-3">2023 - present</p>
+                    <ul className="text-secondary small list-unstyled">
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Specializing in cybersecurity and REST API development
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Python programming and Flask framework
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Web application architecture
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Advanced Data Structures and Algorithms
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Project work in Agile environments
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="education-card p-4 rounded-3 border bg-light">
+                    <h3 className="h5 text-primary">
+                      Oulu University of Applied Sciences
+                    </h3>
+                    <p className="text-secondary mb-1">
+                      Bachelor of Business Administration, Business Information
+                      Technology
+                    </p>
+                    <p className="text-muted mb-3">2022 - 2023</p>
+                    <ul className="text-secondary small list-unstyled">
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Built 2 fully functional e-commerce sites
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Created a Vauva.fi-style content platform
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        React, PHP, and MySQL development
+                      </li>
+                      <li className="mb-2">
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        WordPress and WooCommerce
+                      </li>
+                      <li>
+                        <i className="fa-solid fa-check me-2 text-primary"></i>
+                        Real client project experience
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="col-12">
+                  <div className="education-card p-4 rounded-3 border bg-primary bg-opacity-10">
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fa-solid fa-graduation-cap fs-4 text-primary me-3"></i>
+                      <h3 className="h5 text-primary mb-0">
+                        Future Academic Goals
+                      </h3>
+                    </div>
+                      <p className="text-secondary mb-3">
+                        I'm passionate about Data Structures and Algorithms, and
+                        they’ve strongly influenced my academic journey. I'm
+                        aiming for a Master's degree in Algorithm Design and
+                        Analysis, and I love tackling challenging
+                        problems—whether it's optimizing a system, improving
+                        efficiency in a project, or experimenting with new
+                        approaches. Some of the areas I find most exciting
+                        include:
+                      </p>
+                    <div className="d-flex flex-wrap gap-2 mb-3">
+                      <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                        Algorithm Optimization
+                      </span>
+                      <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                        Problem Solving with Algorithms
+                      </span>
+                      <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                        Trees & Graphs
+                      </span>
+                      <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
+                        Cybersecurity
+                      </span>
+                    </div>
+                    <p className="text-secondary mb-0 small">
+                      This foundation in algorithmic thinking and security helps
+                      me write more efficient, scalable, and secure code. I'm
+                      excited to deepen this knowledge in graduate studies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Projects Section */}
+          <div className="row mb-5">
+            <div className="col-12">
+              <h2 className="h3 mb-4">Featured Projects</h2>
+              <div className="row g-4">
+                <div className="col-12 col-md-6">
+                  <div className="education-card p-4 rounded-3 border bg-light">
+                    <div className="d-flex align-items-start justify-content-between mb-2">
+                      <h3 className="h5 text-primary mb-0">
+                        Paintem Oy Website Redesign
+                      </h3>
+                      <a
+                        href="https://paintem.fi/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary"
+                      >
+                        <i className="fa-solid fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                    <p className="text-muted small mb-3">2024</p>
+                    <p className="text-secondary small mb-3">
+                      Complete website overhaul for a client, modernizing the
+                      design, enhancing user experience, and optimizing
+                      performance.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        HTML
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        CSS
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        JavaScript
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        PHP
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-md-6">
+                  <div className="education-card p-4 rounded-3 border bg-light">
+                    <h3 className="h5 text-primary mb-2">
+                      E-commerce & Content Platforms
+                    </h3>
+                    <p className="text-muted small mb-3">2022 - 2023</p>
+                    <p className="text-secondary small mb-3">
+                      Built 2 fully functional e-commerce sites and a
+                      Vauva.fi-style content platform with user management,
+                      shopping cart, payment systems, and admin panels.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        React
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        PHP
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        MySQL
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        WordPress
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technologies Section */}
+          <div className="row">
+            <div className="col-12">
+              <div id="technologies-section" className="pt-2">
+                <div>
+                  <h1 className="mb-4">Technologies and Skills</h1>
+                  <p className="text-secondary mb-5">
+                    My technical toolkit is constantly evolving. Here are the
+                    key technologies and skills I work with:
+                  </p>
+
+                  {/* Frontend */}
+                  <div className="skill-section mb-4 p-4 border rounded shadow-lg bg-white">
+                    <h3 className="text-primary fw-bold mb-3">
+                      <i className="fa-solid fa-code me-2"></i>
+                      Frontend Development
+                    </h3>
+                    <p className="text-secondary mb-3">
+                      Specializing in modern JavaScript frameworks and
+                      responsive design principles.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        React
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Next.js
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        JavaScript
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        TypeScript
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        TailwindCSS
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Bootstrap
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Framer Motion
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        HTML5/CSS3
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Responsive Design
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        SEO Optimization
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Testing (Jest/Cypress)
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        UI/UX Design
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Backend */}
+                  <div className="skill-section mb-4 p-4 border rounded shadow-lg bg-white">
+                    <h3 className="text-primary fw-bold mb-3">
+                      <i className="fa-solid fa-server me-2"></i>
+                      Backend Development
+                    </h3>
+                    <p className="text-secondary mb-3">
+                      Building robust server-side applications and APIs with
+                      modern technologies.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Node.js
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Python
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Flask
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Express
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        PHP
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        PostgreSQL
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        MongoDB
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        MySQL
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        REST APIs
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Firebase
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Authentication/JWT
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        WordPress
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        WooCommerce
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* DevOps & Tools */}
+                  <div className="skill-section p-4 border rounded shadow-lg bg-white">
+                    <h3 className="text-primary fw-bold mb-3">
+                      <i className="fa-solid fa-wrench me-2"></i>
+                      DevOps & Tools
+                    </h3>
+                    <p className="text-secondary mb-3">
+                      Experience with modern development workflows and cloud
+                      platforms.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Git/GitHub
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        AWS
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Docker
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        CI/CD
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Cloud Platforms
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Agile/Scrum
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Linux
+                      </span>
+                      <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
+                        Cybersecurity
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="technologies-section" className="container d-flex flex-column py-5 mt-4 border-top">
-        <h1>Technologies and Skills</h1>
-        {/* Frontend */}
-        <div className="mb-1 p-4 border container-fluid rounded shadow-m bg-light">
-          <h3 className="text-black fw mb-2 pb-2">Frontend</h3>
-          <div className="flex-wrap text-center justify-content-center gap-2">
-            {[
-              "React",
-              "Vite",
-              "JavaScript",
-              "TailwindCSS",
-              "WordPress",
-              "SEO",
-              "Next.js",
-              "Framer Motion",
-              "Firebase Auth",
-              "UI/UX Design",
-              "Cypress",
-              "Jest",
-              "Vitest",
-              "Pytest",
-              "RobotFramework",
-              "HTML",
-              "CSS",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold"
-                style={{ cursor: "default", transition: "all 0.3s ease" }}
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* Backend */}
-        <div className="mb-1 p-4 border container-fluid rounded shadow-m bg-light">
-          <h3 className="text-black fw mb-2 pb-2">Backend</h3>
-          <div className=" flex-wrap text-center justify-content-center gap-2 p-2">
-            {[
-              "TypeScript",
-              "Python",
-              "Node.js",
-              "Express",
-              "PostgreSQL",
-              "SQLServer",
-              "MySQL",
-              "SQLite",
-              "MongoDB",
-              "REST API",
-              "JWT",
-              "Firebase",
-              "Postman",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold"
-                style={{ cursor: "default", transition: "all 0.3s ease" }}
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* DevOps & Other */}
-        <div className="p-4 border rounded container-fluid shadow-m bg-light">
-          <h3 className="text-black fw mb-2 pb-2">
-            DevOps & Other Skills
-          </h3>
-          <div className="flex-wrap  text-center justify-content-center gap-2">
-            {[
-              "GitHub",
-              "GitLab",
-              "Security",
-              "AWS",
-              "Firebase",
-              "Google Cloud",
-              "Server management",
-              "Domain & SSL management",
-              "Agile",
-              "Scrum",
-              "Figma",
-              "Communication",
-              "Troubleshooting",
-              "Team Management",
-            ].map((skill) => (
-              <span
-                key={skill}
-                className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold"
-                style={{ cursor: "default", transition: "all 0.3s ease" }}
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>¨
-    </motion.section>
+    </section>
   );
 }

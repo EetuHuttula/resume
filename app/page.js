@@ -1,12 +1,11 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
 import "./styles.css";
 
 export default function Home() {
-    const roles = [
+  const roles = [
     "The Frontend Redemption",
     "Backend to the Future",
     "Fullstack Club",
@@ -27,7 +26,9 @@ export default function Home() {
   ];
 
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [showNavbar, setShowNavbar] = useState(false);
 
+  // Role change
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => {
@@ -38,12 +39,36 @@ export default function Home() {
         return nextIndex;
       });
     }, 2800);
-
     return () => clearInterval(intervalId);
+  }, []);
+
+  // Show navbar on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowNavbar(true);
+      } else {
+        setShowNavbar(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="Home">
+      {/* Navbar */}
+      <motion.nav
+        className={`navbar ${showNavbar ? "navbar-visible" : ""}`}
+        initial={{ y: -100 }}
+        animate={{ y: showNavbar ? 0 : -100 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
+      >
+        <Link href="#about">About</Link>
+        <Link href="#references">References</Link>
+        <Link href="#contact">Contact</Link>
+      </motion.nav>
+
       {/* Background video */}
       <video
         src="/websitebg.mp4"
@@ -130,29 +155,30 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.9, ease: "easeOut" }}
       >
-        <Link href="/pages/about" className="btn-home text-light" aria-label="Tutustu Palveluihin">
+        <Link href="#about" className="btn-home text-light">
           ABOUT
         </Link>
-        <Link href="/pages/references" className="btn-home text-light" aria-label="Tutustu Palveluihin">
+        <Link href="#references" className="btn-home text-light">
           References
         </Link>
-        <Link href="/pages/contact" className="btn-home text-light" aria-label="Tutustu Palveluihin">
+        <Link href="#contact" className="btn-home text-light">
           Contact
         </Link>
       </motion.div>
 
-      {/* Motion Question Mark Tooltip */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6, delay: 1.2 }}
-        whileHover={{ scale: 1.1 }}
-        className="question-mark-tooltip"
-      >
-        <span className="question-mark">?</span>
-        <div className="tooltip-text">Those are movie titles if you are wondering</div>
-      </motion.div>
-      
-    </div>
+            <motion.div
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, delay: 1.2 }}
+  whileHover={{ scale: 1.1 }}
+  className="question-mark-tooltip"
+>
+  <span className="question-mark">?</span>
+  <div className="tooltip-text">
+    These are definitely not bug reports… probably.
+  </div>
+</motion.div>
+
+</div>
   );
 }

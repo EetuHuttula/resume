@@ -10,11 +10,6 @@ export default function Footer() {
   const date = new Date();
   const year = date.getFullYear();
   const pathname = usePathname();
-
-  // Don't render the footer on the frontpage
-  if (pathname === '/') {
-    return null;
-  }
   
   return (
     <div className="container-fluid shadow-xm">

@@ -1,9 +1,79 @@
-body{
-   background: linear-gradient(-55deg, transparent 35%, rgba(0, 0, 0, 0.055) 25%, rgba(0, 0, 0, 0.055) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.055) 75%, rgba(0, 0, 0, 0.055));
-    background-size: 5px 5px;
-    background-color: #f2f2f2;
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.02);
 }
 
-#contact{
-    height: 75vh;
+.contact-content {
+  max-width: 600px;
+  width: 100%;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.contact-subtitle {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.email-button {
+  background: #2d2d2d;
+  color: white;
+}
+
+.linkedin-button {
+  background: #0077b5;
+  color: white;
+}
+
+.github-button {
+  background: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 2rem;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+  }
 }
