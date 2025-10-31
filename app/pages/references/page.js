@@ -5,7 +5,7 @@ import './references.css';
 // Image data
 const clientProjects = [
   {
-    src: '/paintemreference.png',
+    src: './paintemreference.png',
     alt: 'Paintem SoftaKoppi',
     name: 'Paintem Oy',
     url: 'https://paintem.fi/',
@@ -14,7 +14,7 @@ const clientProjects = [
     year: '2024'
   },
   {
-    src: '/baskeri.png',
+    src: './baskeri.png',
     alt: 'Baskeri Productions SoftaKoppi',
     name: 'Baskeri Productions',
     url: 'https://baskeriproductions.fi',
@@ -23,7 +23,7 @@ const clientProjects = [
     year: '2024'
   }, 
   {
-    src: '/petenpisnes.png',
+    src: './petenpisnes.png',
     alt: 'Peten Pisnes SoftaKoppi',
     name: 'Peten Pisnes',
     url: 'https://petenpisnes.fi/',
@@ -35,21 +35,21 @@ const clientProjects = [
 
 const personalProjects = [
   {
-    src: '/porinanurkka.PNG',
+    src: './porinanurkka.PNG',
     alt: 'Porinanurkka personal project',
     name: 'Porinanurkka',
     description: 'Community platform project with user interaction features',
     tech: ['Python', 'Flask', 'PostreSQL', 'Pytest']
   },
   {
-    src: '/sluuppishopetusivu.png',
+    src: './sluuppishopetusivu.png',
     alt: 'SluuppiShop e-commerce',
     name: 'SluuppiShop',
     description: 'Full-featured e-commerce platform with shopping cart and checkout system',
     tech: ['Wordpress', 'WooCommerce', 'ELementor']
   },
   {
-    src: '/chesscom.png',
+    src: './chesscom.png',
     alt: 'Chess.com API project',
     name: 'Chess.com Player Search',
     url: 'https://chess-yt2t.onrender.com/',
@@ -57,7 +57,7 @@ const personalProjects = [
     tech: ['React', 'REST API', 'Chess.com API']
   },
     {
-    src: '/shoelando.png',
+    src: './shoelando.png',
     alt: 'Shoelando Web Store',
     name: 'Shoelando Web Store',
     description: 'Shoe retail web store with product listings and shopping cart',

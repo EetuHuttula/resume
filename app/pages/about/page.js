@@ -12,7 +12,7 @@ export default function About() {
                 <img
                   className="img-fluid rounded-3 shadow-lg"
                   loading="lazy"
-                  src="../EetuHuttula.jpg"
+                  src="./EetuHuttula.jpg"
                   alt="Eetu Huttula"
                 />
               </div>

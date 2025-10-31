@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Background video */}
       <video
-        src="/websitebg.mp4"
+        src="./websitebg.mp4"
         autoPlay
         loop
         muted
