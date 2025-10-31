@@ -8,7 +8,7 @@
     "export": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run export && shx touch ./out/.nojekyll && gh-pages -d out --dotfiles"
+    "deploy": "npm run export && shx touch ./out/.nojekyll && gh-pages -d out -b gh-pages --dotfiles --no-history"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
