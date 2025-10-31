@@ -40,7 +40,7 @@ export default function Home() {
       });
     }, 2800);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [roles.length]);
 
   // Show navbar on scroll
   useEffect(() => {
