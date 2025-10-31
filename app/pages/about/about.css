@@ -1,0 +1,109 @@
+
+.about-container {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.content-wrapper {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.skill-section {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  background: #f8f9fa !important;
+}
+
+.skill-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.skill-badge[data-level="Advanced"] {
+  background: rgba(25, 135, 84, 0.1);
+  color: #198754;
+  border: 1px solid rgba(25, 135, 84, 0.2);
+}
+
+.skill-badge[data-level="Intermediate"] {
+  background: rgba(13, 110, 253, 0.1);
+  color: #0d6efd;
+  border: 1px solid rgba(13, 110, 253, 0.2);
+}
+
+.skill-badge[data-level="Basic"] {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+  border: 1px solid rgba(108, 117, 125, 0.2);
+}
+
+.skill-badge:hover {
+  transform: translateY(-2px);
+}
+
+.image-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.02);
+}
+
+.icon-box {
+  min-width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-2px);
+}
+
+.display-5 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d2d2d;
+  line-height: 1.2;
+}
+
+.education-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.education-card ul li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.education-card ul li i {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 991.98px) {
+  .display-5 {
+    font-size: 2rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem !important;
+  }
+}
