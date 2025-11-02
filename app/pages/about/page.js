@@ -251,7 +251,7 @@ export default function About() {
                   <div className="education-card p-4 rounded-3 border bg-light">
                     <div className="d-flex align-items-start justify-content-between mb-2">
                       <h3 className="h5 text-primary mb-0">
-                        Paintem Oy Website Redesign
+                        Paintem Website Redesign
                       </h3>
                       <a
                         href="https://paintem.fi/"
@@ -281,6 +281,9 @@ export default function About() {
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
                         PHP
                       </span>
+                        <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        SEO
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -307,6 +310,12 @@ export default function About() {
                       </span>
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
                         WordPress
+                      </span>
+                        <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        Next.js
+                      </span>
+                        <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        Python
                       </span>
                     </div>
                   </div>
@@ -368,7 +377,7 @@ export default function About() {
                         SEO Optimization
                       </span>
                       <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
-                        Testing (Jest/Cypress)
+                        Testing (Jest/Cypress/Pytest)
                       </span>
                       <span className="badge text-dark border border-dark px-3 py-2 m-1 rounded fw-semibold">
                         UI/UX Design
