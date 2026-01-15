@@ -8,9 +8,8 @@ const clientProjects = [
     src: './paintemreference.png',
     alt: 'Paintem SoftaKoppi',
     name: 'Paintem Oy',
-    url: 'https://paintem.fi/',
-    description: 'Complete website redesign for a painting service company. Modernized the entire site with improved user experience, performance optimization, and responsive design.',
-    tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
+    description: 'Complete website redesign for a paintball company. Modernized the entire site with improved user experience, performance optimization, and responsive design.',
+    tech: ['Next.js', 'TailwindCSS', 'JavaScript', 'PHP', 'SEO Optimization'],
     year: '2024'
   },
   {
@@ -26,7 +25,6 @@ const clientProjects = [
     src: './petenpisnes.png',
     alt: 'Peten Pisnes SoftaKoppi',
     name: 'Peten Pisnes',
-    url: 'https://petenpisnes.fi/',
     description: 'Professional business portfolio website with custom design. Focused on clean aesthetics, performance optimization, and user-friendly navigation.',
     tech: ['Next.js', 'TailwindCSS', 'Framer Motion', 'SEO Optimization'],
     year: '2024'
@@ -104,9 +102,6 @@ export default function References() {
                 <div className="project-image-wrapper">
                   <img src={project.src} alt={project.alt} className="project-image" loading="lazy" />
                   <div className="project-year-badge">{project.year}</div>
-                  <div className="project-overlay">
-                    <span className="project-overlay-text">View Project →</span>
-                  </div>
                 </div>
                 <div className="project-card-content">
                   <h3 className="project-title">{project.name}</h3>

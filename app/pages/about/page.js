@@ -87,14 +87,7 @@ export default function About() {
                   <li className="mb-2">
                     Rebuilt Paintem's website, significantly improving user
                     experience
-                    <a
-                      href="https://paintem.fi/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="ms-2 text-primary"
-                    >
-                      <i className="fa-solid fa-external-link-alt"></i>
-                    </a>
+      
                   </li>
                   <li className="mb-2">
                     Developed custom websites for Baskeriproduction and
@@ -107,10 +100,10 @@ export default function About() {
                 </ul>
                 <div className="d-flex flex-wrap gap-2">
                   <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
-                    HTML5
+                    Next.js
                   </span>
                   <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
-                    CSS3
+                    TailwindCSS
                   </span>
                   <span className="badge bg-primary bg-opacity-25 text-primary px-3 py-2">
                     JavaScript
@@ -253,14 +246,6 @@ export default function About() {
                       <h3 className="h5 text-primary mb-0">
                         Paintem Website Redesign
                       </h3>
-                      <a
-                        href="https://paintem.fi/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary"
-                      >
-                        <i className="fa-solid fa-external-link-alt"></i>
-                      </a>
                     </div>
                     <p className="text-muted small mb-3">2024</p>
                     <p className="text-secondary small mb-3">
@@ -270,19 +255,22 @@ export default function About() {
                     </p>
                     <div className="d-flex flex-wrap gap-2">
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
-                        HTML
+                        Next.js
                       </span>
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
-                        CSS
+                        TailwindCSS
                       </span>
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
-                        JavaScript
+                        Bootstrap
+                      </span>
+                      <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
+                        Framer Motion
                       </span>
                       <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
                         PHP
                       </span>
                         <span className="badge bg-secondary bg-opacity-25 text-secondary px-2 py-1 small">
-                        SEO
+                        SEO Optimization
                       </span>
                     </div>
                   </div>
