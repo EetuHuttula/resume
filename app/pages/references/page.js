@@ -11,7 +11,7 @@ const clientProjects = [
     description: 'Complete website redesign for a paintball company. Modernized the entire site with improved user experience, performance optimization, and responsive design.',
     tech: ['Next.js', 'TailwindCSS', 'JavaScript', 'PHP', 'SEO Optimization'],
     year: '2024'
-  },
+  }, 
   {
     src: './baskeri.png',
     alt: 'Baskeri Productions SoftaKoppi',
@@ -32,6 +32,15 @@ const clientProjects = [
 ];
 
 const personalProjects = [
+    {
+    src: './portshop.png',
+    alt: 'Portshop SoftaKoppi',
+    name: 'Portshop Oy',
+    url: 'https://portshop-red.vercel.app/',
+    description: 'Mern stack shop with cart, checkout, and admin panel. Developed a full-featured e-commerce platform with user authentication and product management.',
+    tech: ['React', 'Node.js', 'Express', 'MongoDB'],
+    year: '2026'
+  },
   {
     src: './porinanurkka.PNG',
     alt: 'Porinanurkka personal project',
@@ -133,7 +142,7 @@ export default function References() {
             {personalProjects.map((project, index) => (
               <div
                 key={index}
-                className="personal-project-card"
+                className={`personal-project-card ${project.name === 'Portshop Oy' ? 'featured-personal-project' : ''}`}
                 onClick={() => handleClick(project.url)}
               >
                 <div className="personal-project-image-wrapper">
